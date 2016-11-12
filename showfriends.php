@@ -4,7 +4,7 @@
  include("share.php");
 if(! $_SESSION['user_email']){
 echo "<script>alert('please LOGIN FIRST!')</script>";
-header("Location: stayconnected.php");
+header("Location: index.php");
 
     die();
 }

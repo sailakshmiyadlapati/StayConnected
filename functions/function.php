@@ -9,7 +9,9 @@
 
 	$con = new mysqli($server, $username, $password, $db);
 
-	/*$con=mysqli_connect("$server, $username, $password, $db") or die("Connection was not established");*/
+	/*$conn = new mysqli($server, $username, $password, $db);*/
+
+	$con=mysqli_connect("$server", "$username", "$password", "$db") or die("Connection was not established");
 
 	
 

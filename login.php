@@ -18,7 +18,7 @@
 			
 		else{
 			echo "<script>alert('Email or Password is incorrect!')</script>";
-			echo "<script>window.open('stayconnected.php','_self')</script>";
+			echo "<script>window.open('index.php','_self')</script>";
 			
 		}	
 			

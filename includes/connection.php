@@ -7,9 +7,9 @@ $url = parse_url(getenv("mysql://b8af9b811a27ad:ed86e1b4@us-cdbr-iron-east-04.cl
 	$password = $url["ed86e1b4"];
 	$db = substr($url["heroku_2f65223a14ae42a"], 1);
 
-	$con = new mysqli($server, $username, $password, $db);
+	/*$conn = new mysqli($server, $username, $password, $db);*/
 
-	/*$con=mysqli_connect("$server, $username, $password, $db") or die("Connection was not established");*/
+	$con=mysqli_connect("$server", "$username", "$password", "$db") or die("Connection was not established");
 
 
 
