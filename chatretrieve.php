@@ -1,6 +1,6 @@
 <?php
 	session_start();
-	include("functions/function.php");
+	include("includes/connection.php");
 	$mail = $_SESSION['user_email'];
 	
 	if (isset ($_POST['person_mail'])){

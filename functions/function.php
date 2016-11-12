@@ -7,10 +7,10 @@
 	$password = $url["ed86e1b4"];
 	$db = substr($url["heroku_2f65223a14ae42a"], 1);
 
-	/*$conn = new mysqli($server, $username, $password, $db);*/
+	$con = new mysqli($server, $username, $password, $db);
 
-	$con=mysqli_connect("$server, $username, $password, $db") or die("Connection was not established");
-	
+	/*$con=mysqli_connect("$server, $username, $password, $db") or die("Connection was not established");*/
+
 	
 
 ?>
