@@ -1,7 +1,8 @@
 <?php
 	session_start();
+	include("functions/function.php");
 	$mail = $_SESSION['user_email'];
-	$con=mysqli_connect("localhost","root","","social_network") or die("Connection was not established");
+	
 	if (isset ($_POST['person_mail'])){
 	$personmail= $_POST['person_mail'];
 	$retrievechat = "select * from chat where (chat_sender = '$mail' and chat_receiver='$personmail') or (chat_sender = '$personmail' and chat_receiver='$mail')";
